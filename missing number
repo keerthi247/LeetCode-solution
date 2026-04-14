@@ -1,0 +1,5 @@
+class Solution:
+    def missingNumber(self, arr, n):
+        total = n * (n + 1) // 2
+        actual = sum(arr)
+        return total - actual
