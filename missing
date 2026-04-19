@@ -1,0 +1,9 @@
+def missing_number(arr, n):
+    total = n * (n + 1) // 2   # expected sum
+    actual = sum(arr)          # actual sum
+    return total - actual
+
+# Example
+arr = [0, 1, 3, 4]
+n = 4
+print(missing_number(arr, n))  # Output: 2
