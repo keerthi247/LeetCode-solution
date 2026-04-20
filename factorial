@@ -1,0 +1,13 @@
+function factorial(n) {
+    
+    // Calculating factorial of number
+    let ans = 1;
+    for (let i = 2; i <= n; i++) {
+        ans = ans * i;
+    }
+    return ans;
+}
+
+// Driver method
+let num = 5;
+console.log(factorial(5));
