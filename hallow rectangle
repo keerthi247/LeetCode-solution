@@ -1,0 +1,22 @@
+// Function to print hollow rectangle
+function printRectangle(n, m) {
+    let output = "";
+
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= m; j++) {
+            if (i === 1 || i === n || j === 1 || j === m)
+                output += "*";
+            else
+                output += " ";
+        }
+        output += "
+";
+    }
+
+    console.log(output);
+}
+
+// Driver code
+let rows = 6;
+let columns = 20;
+printRectangle(rows, columns);
